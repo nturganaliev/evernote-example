@@ -1,4 +1,5 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import argparse
 
 from evernote.api.client import EvernoteClient
@@ -41,7 +42,7 @@ if __name__ == '__main__':
 
     client = EvernoteClient(
         token=config.EVERNOTE_PERSONAL_TOKEN,
-        sandbox=False
+        sandbox=True
     )
     note_store = client.get_note_store()
 
